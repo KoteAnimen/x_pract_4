@@ -4,11 +4,12 @@
              x:Class="x_pract_4.Page1">
     <ContentPage.Content>
         <StackLayout>
-            <RadioButton x:Name="rbt_Auto" GroupName="auto" Content="Автоматический расчет" FontSize="Title" CheckedChanged="rbt_Auto_CheckedChanged"/>            
+            <CheckBox x:Name="rbt_AutoOn" CheckedChanged="rbt_AutoOn_CheckedChanged"/>
+            <Label Text="Автоматический расчет" FontSize="Subtitle"/>
             <Frame  BorderColor="Aqua">
                 <StackLayout x:Name="frame1">
                     <Label Text="Введите название месяца:" FontSize="Large"/>
-                    <Entry x:Name="etr_FieldMonth"/>
+                    <Entry x:Name="etr_FieldMonth" TextChanged="etr_FieldMonth_TextChanged"/>
                     <Label Text="Время года:" FontSize="Large"/>
                     <Entry x:Name="etr_FieldPartYear" IsReadOnly="True"/>
                 </StackLayout>

@@ -4,9 +4,10 @@
              x:Class="x_pract_4.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <RadioButton x:Name="rbt_Hand" GroupName="auto" Content="Ручной расчет" FontSize="Title" CheckedChanged="rbt_Hand_CheckedChanged"/>
-            <Frame x:Name="frame2" BorderColor="Aqua">
-                <StackLayout>
+            <CheckBox x:Name="rbt_Hand" CheckedChanged="rbt_Hand_CheckedChanged"/>
+            <Label Text="Ручной расчет"/>
+            <Frame BorderColor="Aqua">
+                <StackLayout x:Name="frame2">
                     <Label Text="Введите название месяца:" FontSize="Large"/>
                     <Entry x:Name="etr_FieldMonth2"/>
                     <Label Text="Время года:" FontSize="Large"/>
