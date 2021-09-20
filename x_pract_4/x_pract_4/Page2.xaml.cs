@@ -12,19 +12,19 @@ namespace x_pract_4
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page2 : ContentPage
     {
-        YearParts year;
+        YearParts year2;
         public Page2()
         {
             InitializeComponent();
             frame2.IsEnabled = false;
-            year = new YearParts();
+            year2 = new YearParts();
         }
 
         private void btn_Accept_Clicked(object sender, EventArgs e)
         {
             try
             {
-                etr_FieldPartYear2.Text = year.GivePart(etr_FieldMonth2.Text);
+                etr_FieldPartYear2.Text = year2.GivePart(etr_FieldMonth2.Text);
             }
             catch
             {
