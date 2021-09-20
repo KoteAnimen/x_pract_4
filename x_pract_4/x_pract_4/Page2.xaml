@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="x_pract_4.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <RadioButton x:Name="rbt_Hand" GroupName="auto" Content="Ручной расчет" FontSize="Title" CheckedChanged="rbt_Hand_CheckedChanged"/>
+            <Frame x:Name="frame2" BorderColor="Aqua">
+                <StackLayout>
+                    <Label Text="Введите название месяца:" FontSize="Large"/>
+                    <Entry x:Name="etr_FieldMonth2"/>
+                    <Label Text="Время года:" FontSize="Large"/>
+                    <Entry x:Name="etr_FieldPartYear2" IsReadOnly="True"/>
+                    <Button x:Name="btn_Accept" Text="Рассчитать" Clicked="btn_Accept_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
